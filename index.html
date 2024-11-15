@@ -7,7 +7,7 @@
     <meta name="keywords" content="UI/UX Designer, Developer, Portfolio, ADNAN MAHMUD">
     <title>Adnan Mahmud</title>
     <link rel="icon" type="image/x-icon" href="./image/adnan.png">
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/36c7ed1c9a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,27 +22,27 @@
             </div>
             <div class="navSection">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#skill">Skill</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>Home</li>
+                    <li onclick="service()">Service</li>
+                    <li onclick="skill()">Skill</li>
+                    <li onclick="projects()">Projects</li>
+                    <li onclick="scrollToHireMe()">Contact</li>
                 </ul>
             </div>
             <div class="headButton">
-                <button class="cvButton">CV</button>
-                <button class="hireMeButton">Hire Me</button>
+                <button onclick="viewCv()" class="cvButton">CV</button>
+                <button onclick="scrollToHireMe()" class="hireMeButton">Hire Me</button>
             </div>
         </header>
         <div class="heroContener">
             <div class="heroTextSection">
                 <p class="heroHeadSection">Hello! I’m<br>Mirta Akins</p>
                 <p class="heroTextSection">UI/UX Designer and Developer</p>
-                <button>Get Resume <i class="fa-solid fa-download"></i></button>
+                <button onclick="viewCv()">Get Resume <i class="fa-solid fa-download"></i></button>
                 <div class="icon">
-                    <a href="https://www.linkedin.com/in/adnanmahmud" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.linkedin.com/in/adnanmahmud" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
-                    <a href="https://www.linkedin.com/in/adnanmahmud" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/adnanmahmud99" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/adnanmahmud99" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+                    <a href="https://www.facebook.com/adnanmahmud99" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
                 </div>
             </div>
             <div class="heroImageSection">
@@ -50,6 +50,245 @@
             </div>
         </div>
     </div>
+    <div class="services" id="service">
+        <div class="servicesText">
+            <p>|| My Services</p>
+            <h1>Service Provide For My Clients.</h1>
+        </div>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="icon">
+                    <!-- Add your icon here, e.g., with Font Awesome or SVG -->
+                    <i class="fa fa-layer-group"></i>
+                </div>
+                <h2>UI/UX Design</h2>
+                <ul>
+                    <li>Landing Pages</li>
+                    <li>User Flow</li>
+                    <li>Wireframing</li>
+                    <li>Prototyping</li>
+                    <li>Mobile App Design</li>
+                </ul>
+            </div>
+    
+            <div class="service-card">
+                <div class="icon">
+                    <!-- Add your icon here -->
+                    <i class="fa fa-code"></i>
+                </div>
+                <h2>Development</h2>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Animation</li>
+                    <li>WordPress</li>
+                    <li>React</li>
+                </ul>
+            </div>
+    
+            <div class="service-card">
+                <div class="icon">
+                    <!-- Add your icon here -->
+                    <i class="fa fa-pen-nib"></i>
+                </div>
+                <h2>Illustration</h2>
+                <ul>
+                    <li>Character Design</li>
+                    <li>Icon Set</li>
+                    <li>Illustration Guide</li>
+                    <li>Illustration Set</li>
+                    <li>Motion Graphic</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="service-card">
+                    <div class="icon">
+                        <!-- Add your icon here, e.g., with Font Awesome or SVG -->
+                        <i class="fa fa-layer-group"></i>
+                    </div>
+                    <h2>UI/UX Design</h2>
+                    <ul>
+                        <li>Landing Pages</li>
+                        <li>User Flow</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>Mobile App Design</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="service-card">
+                    <div class="icon">
+                        <!-- Add your icon here -->
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h2>Development</h2>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Animation</li>
+                        <li>WordPress</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="service-card">
+                    <div class="icon">
+                        <!-- Add your icon here -->
+                        <i class="fa fa-pen-nib"></i>
+                    </div>
+                    <h2>Illustration</h2>
+                    <ul>
+                        <li>Character Design</li>
+                        <li>Icon Set</li>
+                        <li>Illustration Guide</li>
+                        <li>Illustration Set</li>
+                        <li>Motion Graphic</li>
+                    </ul>
+                </div>
+            </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="skill" id="skill">
+            <div class="skillContener">
+                <div class="skillText">
+                    <p>|| Special Skills</p>
+                    <h1>My Special Skill<br>Field Here.</h1>
+                    <button onclick="viewCv()" >Get Resume <i class="fa-solid fa-download"></i></button>
+                </div>
+                <div class="skillBar">
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Communication</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill progress1"></div>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Leadership</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill progress2"></div>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Teamwork</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill progress3"></div>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Teamwork</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill progress4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project" id="projects">
+        <div class="projectContaner">
+            <div class="projectText">
+                <p>|| My Services</p>
+                <h1>My Complete Projects</h1>
+            </div>
+            <div class="project-container">
+                <img class="grid-item" src="./image/project/image-removebg-preview1.png" alt="">
+                <img class="grid-item" src="./image/project/image-removebg-preview2.png" alt="">
+                <img class="grid-item" src="./image/project/image-removebg-preview3.png" alt="">
+                <img class="grid-item" src="./image/project/image-removebg-preview4.png" alt="">
+                <img class="grid-item" src="./image/project/image-removebg-preview5.png" alt="">
+                <img class="grid-item" src="./image/project/image-removebg-preview6.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="stats">
+        <div class="statscontener">
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="icon"><i class="fa-regular fa-user"></i></div>
+                    <div>
+                        <p class="number">258+</p>
+                        <p class="label">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                    <div>
+                        <p class="number">590K</p>
+                        <p class="label">Project Complete</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
+                    <div>
+                        <p class="number">28+</p>
+                        <p class="label">Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contuct" id="contact">
+        <div>
+            <div class="subscription-container">
+                <p>|| Get Latest Updates</p>
+                <h1>Subscribe For Newsletter</h1>
+                <div class="input-container">
+                    <input type="email" placeholder="demo@example.com" required>
+                    <button>Subscribe Now</button>
+                </div>
+                <div class="contact-info">
+                    <div>
+                        <i class="fa-solid fa-phone"></i> 01641378317
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i> dev.adnanmahmud@gmail.com
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/adnanmahmud99" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/adnanmahmud99" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+                    <a href="https://www.facebook.com/adnanmahmud99" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+    <div class="footer">
+        <div class="footerContener">
+            <div><p class="footerText">© 2024 this portfolio Made with ♡ by <a href="https://github.com/adnanmahmud0">adnanmahmud99</a></p></div>
+            <div class="footerLogo"><img width="30px" src="./image/adnanWhite.svg" alt="adnan logo"><p>Adnan</p></div>
+        </div>
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const menuButton = document.querySelector(".responsiveNav i.fa-bars");
@@ -69,6 +308,53 @@
                 }
             });
         });
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        function viewCv() {
+            const cvUrl = "./image/CV/MD ADNAN MAHMUD - CV.pdf";
+            window.open(cvUrl, "_blank");
+        }
+        function scrollToHireMe() {
+            const section = document.getElementById("contact");
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+        function service() {
+            const section = document.getElementById("service");
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+        function skill() {
+            const section = document.getElementById("skill");
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+        function projects() {
+            const section = document.getElementById("projects");
+            section.scrollIntoView({ behavior: "smooth" });
+        }
     </script>
     
 </body>
